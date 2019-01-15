@@ -345,6 +345,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "BankingAPI": "1.0.0",
           "Xamarin.Forms": "3.4.0.1008975"
         },
         "compile": {
@@ -352,6 +353,15 @@
         },
         "runtime": {
           "bin/placeholder/Banking.dll": {}
+        }
+      },
+      "BankingAPI/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BankingAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingAPI.dll": {}
         }
       }
     }
@@ -781,6 +791,11 @@
       "type": "project",
       "path": "../Banking/Banking.csproj",
       "msbuildProject": "../Banking/Banking.csproj"
+    },
+    "BankingAPI/1.0.0": {
+      "type": "project",
+      "path": "../../../../BankingAPI/BankingAPIClassLib/BankingAPI.csproj",
+      "msbuildProject": "../../../../BankingAPI/BankingAPIClassLib/BankingAPI.csproj"
     }
   },
   "projectFileDependencyGroups": {

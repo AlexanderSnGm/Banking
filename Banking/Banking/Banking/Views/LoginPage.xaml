@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Banking.Views.LoginPage">
+             x:Class="Banking.Views.LoginPage"
+             Title="Welcome to Banking S.A."
+             NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
         <StackLayout >
             <!--<Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />-->
-            <Label Text="Binevenido a Banking S.A.!" FontSize="Large" />
+            <Label Text="Bienvenido a Banking S.A." FontSize="Medium" Margin="0,20,0,0" />
             <StackLayout>
                 <Label Text="Identificacion:" ></Label>
                 <Entry Text="" Placeholder="Identificacion" x:Name="txtID" MaxLength="9" Keyboard="Numeric"></Entry>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Banking.Logic;
+using BankingAPI.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +28,20 @@ namespace Banking.Views
 
         async void BtnLogin_Clicked(object sender, EventArgs e)
         {
+
+            //validates fields
+            if (String.IsNullOrEmpty(txtID.Text) || String.IsNullOrEmpty(txtPwd.Text))
+            {
+                await DisplayAlert("Error", "Los campos de identificacion y contaseña son requeridos", "Volver a intentar");
+            }
+            else
+            {
+                BankingProcess logic = new BankingProcess();
+                BankingUser reg = logic.ValidateLogin(txtID.Text, txtPwd.Text);
+                
+            }
+            //validates user credentials
+
             await Navigation.PushAsync(new LoginPage());
         }
 

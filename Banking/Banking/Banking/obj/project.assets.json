@@ -42,6 +42,15 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "BankingAPI/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BankingAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingAPI.dll": {}
+        }
       }
     }
   },
@@ -334,10 +343,16 @@
         "xamarin.forms.3.4.0.1008975.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "BankingAPI/1.0.0": {
+      "type": "project",
+      "path": "../../../../BankingAPI/BankingAPIClassLib/BankingAPI.csproj",
+      "msbuildProject": "../../../../BankingAPI/BankingAPIClassLib/BankingAPI.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "BankingAPI >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Forms >= 3.4.0.1008975"
     ]
@@ -371,7 +386,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lgomez.5DOM\\Documents\\GitHub\\BankingAPI\\BankingAPIClassLib\\BankingAPI.csproj": {
+              "projectPath": "C:\\Users\\lgomez.5DOM\\Documents\\GitHub\\BankingAPI\\BankingAPIClassLib\\BankingAPI.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
