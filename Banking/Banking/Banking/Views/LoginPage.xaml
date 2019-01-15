@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Banking.Views.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout >
+            <!--<Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />-->
+            <Label Text="Binevenido a Banking S.A.!" FontSize="Large" />
+            <StackLayout>
+                <Label Text="Identificacion:" ></Label>
+                <Entry Text="" Placeholder="Identificacion" x:Name="txtID" MaxLength="9" Keyboard="Numeric"></Entry>
+                <Label Text="Contraseña:" ></Label>
+                <Entry Text="" Placeholder="Contraseña" IsPassword="True" Keyboard="Default" x:Name="txtPwd"></Entry>
+                <!--<Button x:Name="btnForgotPassword" Text="Olvidó su contraseña?"></Button>-->
+                <Label x:Name="lbForgotPass" Text="Olvidó su contraseña?" TextColor="Blue" TextDecorations="Underline"  ></Label>
+                <StackLayout>
+                    <Button x:Name="btnLogin" Clicked="BtnLogin_Clicked" Text="Ingresar"></Button>
+                    <Button x:Name="btnSignup" Clicked="BtnSignup_Clicked" Text="Registrarse"></Button>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
