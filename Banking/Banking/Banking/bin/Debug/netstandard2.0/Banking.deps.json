@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "77ac45fa75810ef28ecf58b94804c46f567cccb4"
+    "signature": "d9a4511608ce588bb4253b8d4e1c01583234a90e"
   },
   "compilationOptions": {},
   "targets": {
@@ -23,6 +23,14 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
@@ -41,18 +49,10 @@
       },
       "BankingAPI/1.0.0": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.0.0"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
-          "ClassLibrary.dll": {}
-        }
-      },
-      "Newtonsoft.Json.Reference/12.0.0.0": {
-        "runtime": {
-          "Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.1.22727"
-          }
+          "BankingAPI.dll": {}
         }
       }
     }
@@ -77,6 +77,13 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
     "Xamarin.Forms/3.4.0.1008975": {
       "type": "package",
       "serviceable": true,
@@ -86,11 +93,6 @@
     },
     "BankingAPI/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Newtonsoft.Json.Reference/12.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

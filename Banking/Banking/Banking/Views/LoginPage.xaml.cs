@@ -33,16 +33,24 @@ namespace Banking.Views
             if (String.IsNullOrEmpty(txtID.Text) || String.IsNullOrEmpty(txtPwd.Text))
             {
                 await DisplayAlert("Error", "Los campos de identificacion y contaseña son requeridos", "Volver a intentar");
+                return;
             }
             else
             {
                 BankingProcess logic = new BankingProcess();
                 BankingUser reg = logic.ValidateLogin(txtID.Text, txtPwd.Text);
-                
+                if (reg != null)
+                {
+                    await Navigation.PushAsync(new MainPage());
+                }
+                else {
+                    await DisplayAlert("Credenciales Invalidas!", "Identificacion/contraseña incorrecta", "Volver a intentar");
+                    return;
+                }
             }
             //validates user credentials
 
-            await Navigation.PushAsync(new LoginPage());
+            
         }
 
         async void BtnSignup_Clicked(object sender, EventArgs e)

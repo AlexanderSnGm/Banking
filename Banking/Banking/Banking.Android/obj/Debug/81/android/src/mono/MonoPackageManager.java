@@ -109,6 +109,7 @@ class MonoPackageManager_Resources {
 		"Banking.Android.dll",
 		"Banking.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",
@@ -132,8 +133,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"ClassLibrary.dll",
-		"Newtonsoft.Json.dll",
+		"BankingAPI.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

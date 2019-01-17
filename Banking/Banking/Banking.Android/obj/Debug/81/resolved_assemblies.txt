@@ -4,6 +4,7 @@ C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\ob
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\Java.Interop.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\mscorlib.dll
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\Newtonsoft.Json.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\System.Core.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\System.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\System.Xml.dll
@@ -42,6 +43,5 @@ C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\ob
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\System.Runtime.Serialization.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\System.ServiceModel.Internals.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\System.Web.Services.dll
-C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\ClassLibrary.dll
-C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\Newtonsoft.Json.dll
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\BankingAPI.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Debug\81\android\assets\Mono.Security.dll

@@ -17,7 +17,8 @@ namespace Banking.Logic
 
             RequestResult result = API.LoginWebMethod(login, password);
 
-            if (result.Status == 0) {
+            if (result.Status == 0)
+            {
                 //reg.Id = result.BankingUserResult.Id;
                 //reg.Password = result.BankingUserResult.Password;
                 //reg.FirstName = result.BankingUserResult.FirstName;
@@ -25,6 +26,9 @@ namespace Banking.Logic
                 //reg.Email = result.BankingUserResult.Email;
                 //reg.PhoneNumber = result.BankingUserResult.PhoneNumber;
                 user = result.BankingUserResult;
+            }
+            else {
+                user = null;
             }
 
             return user;

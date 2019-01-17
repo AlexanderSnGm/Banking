@@ -13,7 +13,7 @@
             <Label Text="Bienvenido a Banking S.A." FontSize="Medium" Margin="0,20,0,0" />
             <StackLayout>
                 <Label Text="Identificacion:" ></Label>
-                <Entry Text="" Placeholder="Identificacion" x:Name="txtID" MaxLength="9" Keyboard="Numeric"></Entry>
+                <Entry Text="" Placeholder="Identificacion" x:Name="txtID" Keyboard="Default"></Entry>
                 <Label Text="Contraseña:" ></Label>
                 <Entry Text="" Placeholder="Contraseña" IsPassword="True" Keyboard="Default" x:Name="txtPwd"></Entry>
                 <!--<Button x:Name="btnForgotPassword" Text="Olvidó su contraseña?"></Button>-->
