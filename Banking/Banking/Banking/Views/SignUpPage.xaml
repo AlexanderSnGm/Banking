@@ -1,12 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behavior="clr-namespace:Banking.Logic"
              x:Class="Banking.Views.SignUpPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Registrate y forma parte de nuestra Familia!"
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Registrate y forma parte de nuestra Familia!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" Margin="0,0,0,0" />
+                <StackLayout>
+                    <Label Text="Nombre:" ></Label>
+                    <Entry Text="" Placeholder="Nombre" x:Name="txtFirstName" Keyboard="Default"></Entry>
+                    <Label Text="Apellido:" ></Label>
+                    <Entry Text="" Placeholder="Apellido" x:Name="txtLastName" Keyboard="Default"></Entry>
+                    <Label Text="Email:" ></Label>
+                    <Entry Text="" Placeholder="Email" x:Name="txtID" Keyboard="Email"></Entry>
+                    <Label Text="Telefono:" ></Label>
+                    <Entry Text="" Placeholder="Telefono" x:Name="txtPhone" Keyboard="Telephone">
+                        <Entry.Behaviors>
+                            <behavior:MaskedBehavior Mask="(XXX) XXX-XXX" />
+                        </Entry.Behaviors>
+                    </Entry>
+                    <Label Text="Contraseña:" ></Label>
+                    <Entry Text="" Placeholder="Contraseña" IsPassword="True" Keyboard="Default" x:Name="txtPwd"></Entry>
+                    <Label Text="Validar Contraseña:" ></Label>
+                    <Entry Text="" Placeholder="Vuelva a ingresar su contraseña" IsPassword="True" Keyboard="Default" x:Name="txtPwd2"></Entry>
+                    <Button x:Name="btnSignUp" Text="Registrarse" Clicked="BtnSignUp_Clicked"></Button>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -1548,6 +1548,9 @@ namespace Banking.Droid
 			// aapt resource value: 0x7F060057
 			public const int secondary_text_disabled_material_light = 2131099735;
 			
+			// aapt resource value: 0x7F050007
+			public const int splash_background = 2131034119;
+			
 			// aapt resource value: 0x7F060058
 			public const int switch_thumb_disabled_material_dark = 2131099736;
 			
@@ -1571,6 +1574,9 @@ namespace Banking.Droid
 			
 			// aapt resource value: 0x7F06005F
 			public const int tooltip_background_light = 2131099743;
+			
+			// aapt resource value: 0x7F050006
+			public const int window_background = 2131034118;
 			
 			static Color()
 			{
@@ -2345,6 +2351,12 @@ namespace Banking.Droid
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
+			// aapt resource value: 0x7F010002
+			public const int bankingIcon = 2130771970;
+			
+			// aapt resource value: 0x7F010003
+			public const int bankinglogo = 2130771971;
+			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
 			
@@ -2993,14 +3005,17 @@ namespace Banking.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
+			// aapt resource value: 0x7F010004
+			public const int splash_screen = 2130771972;
+			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
 			
 			// aapt resource value: 0x7F09006A
 			public const int tooltip_frame_light = 2131296362;
 			
-			// aapt resource value: 0x7F010002
-			public const int xamarin_logo = 2130771970;
+			// aapt resource value: 0x7F010005
+			public const int xamarin_logo = 2130771973;
 			
 			static Drawable()
 			{
@@ -3832,14 +3847,20 @@ namespace Banking.Droid
 		public partial class Mipmap
 		{
 			
+			// aapt resource value: 0x7F040004
+			public const int bankingicon = 2130968580;
+			
 			// aapt resource value: 0x7F040002
 			public const int icon = 2130968578;
 			
 			// aapt resource value: 0x7F040003
 			public const int icon_round = 2130968579;
 			
-			// aapt resource value: 0x7F040004
-			public const int launcher_foreground = 2130968580;
+			// aapt resource value: 0x7F040005
+			public const int ic_launcher = 2130968581;
+			
+			// aapt resource value: 0x7F040006
+			public const int launcher_foreground = 2130968582;
 			
 			static Mipmap()
 			{
@@ -4065,8 +4086,8 @@ namespace Banking.Droid
 			// aapt resource value: 0x7F160006
 			public const int Animation_Design_BottomSheetDialog = 2132148230;
 			
-			// aapt resource value: 0x7F060004
-			public const int AppCompatDialogStyle = 2131099652;
+			// aapt resource value: 0x7F060007
+			public const int AppCompatDialogStyle = 2131099655;
 			
 			// aapt resource value: 0x7F160007
 			public const int Base_AlertDialog_AppCompat = 2132148231;
@@ -4569,11 +4590,20 @@ namespace Banking.Droid
 			// aapt resource value: 0x7F160004
 			public const int CardView_Light = 2132148228;
 			
-			// aapt resource value: 0x7F060002
-			public const int MainTheme = 2131099650;
+			// aapt resource value: 0x7F060005
+			public const int MainTheme = 2131099653;
+			
+			// aapt resource value: 0x7F060006
+			public const int MainTheme_Base = 2131099654;
 			
 			// aapt resource value: 0x7F060003
-			public const int MainTheme_Base = 2131099651;
+			public const int MyTheme = 2131099651;
+			
+			// aapt resource value: 0x7F060002
+			public const int MyTheme_Base = 2131099650;
+			
+			// aapt resource value: 0x7F060004
+			public const int MyTheme_Splash = 2131099652;
 			
 			// aapt resource value: 0x7F1600AA
 			public const int Platform_AppCompat = 2132148394;

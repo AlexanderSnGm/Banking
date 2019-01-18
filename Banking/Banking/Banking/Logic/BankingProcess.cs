@@ -34,6 +34,16 @@ namespace Banking.Logic
             return user;
         }
 
+        public RequestResult Register(BankingUserReg bankingUserReg)
+        {
+            RequestResult result = API.RegisterWebMethod(bankingUserReg);
+            if (result.Status != 0)
+            {
+                result = null;
+            }
 
+            return result;
+            //throw new NotImplementedException();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace Banking.Views
 	{
 		public LoginPage ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += async (s, e) => {

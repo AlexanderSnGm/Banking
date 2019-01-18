@@ -1,6 +1,8 @@
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\bin\Debug\netstandard2.0\Banking.deps.json
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\bin\Debug\netstandard2.0\Banking.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\bin\Debug\netstandard2.0\Banking.pdb
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\bin\Debug\netstandard2.0\BankingAPI.dll
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\bin\Debug\netstandard2.0\BankingAPI.pdb
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.csprojAssemblyReference.cache
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
@@ -18,5 +20,3 @@ C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.csproj.CopyComplete
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.pdb
-C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\bin\Debug\netstandard2.0\BankingAPI.dll
-C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\bin\Debug\netstandard2.0\BankingAPI.pdb
