@@ -6,7 +6,7 @@
         <StackLayout>
             <Label Text="Has Olvidado tu contraseña?, No te preocupes, acá puedes volver a recuperarla!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="Medium" Margin="0,20,0,0" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" Margin="0,0,0,0" />
                 <StackLayout VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
                 
