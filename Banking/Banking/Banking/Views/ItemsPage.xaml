@@ -3,16 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Banking.Views.ItemsPage"
               Title="{Binding Title}"
-             x:Name="BrowseItemsPage">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Clicked="AddItem_Clicked">
+             x:Name="BrowseItemsPage"
+             NavigationPage.HasNavigationBar="False">
+    <!--<ContentPage.ToolbarItems>
+        --><!--<ToolbarItem Text="Add" Clicked="AddItem_Clicked">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="UWP" Value="add.png"/>
                 </OnPlatform>
             </ToolbarItem.Icon>
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
+        </ToolbarItem>--><!--
+        <ToolbarItem Name="miInicio" Order="Secondary" Icon="bankingIcon.png" Text="Inicio" Priority="0" />
+        <ToolbarItem Name="miInfo" Order="Secondary" Icon="Xamarin.png" Text="Información" Priority="1" />
+        <ToolbarItem Name="miLogout" Clicked="MiLogout_Clicked" Order="Secondary" Icon="Microsoft.png" Text="Salir" Priority="2" />
+    </ContentPage.ToolbarItems>-->
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="ItemsListView" 

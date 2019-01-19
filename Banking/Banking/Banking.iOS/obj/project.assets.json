@@ -2,12 +2,6 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "Fody/3.0.3": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
@@ -17,85 +11,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Realm/3.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3",
-          "Realm.Database": "3.4.0"
-        },
-        "compile": {
-          "lib/netstandard1.4/Realm.Sync.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/Realm.Sync.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-x64/native/librealm-wrappers.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx.10.10-x64/native/librealm-wrappers.dylib": {
-            "assetType": "native",
-            "rid": "osx.10.10-x64"
-          },
-          "runtimes/win81-x64/native/realm-wrappers.dll": {
-            "assetType": "native",
-            "rid": "win81-x64"
-          },
-          "runtimes/win81-x86/native/realm-wrappers.dll": {
-            "assetType": "native",
-            "rid": "win81-x86"
-          }
-        }
-      },
-      "Realm.Database/3.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "3.0.3",
-          "NETStandard.Library": "2.0.0",
-          "Realm.DataBinding": "1.2.0",
-          "Remotion.Linq": "2.1.2",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
-        },
-        "compile": {
-          "lib/netstandard1.4/Realm.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/Realm.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-x64/native/_._": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          }
-        }
-      },
-      "Realm.DataBinding/1.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/Xamarin.iOS10/Realm.DataBinding.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS10/Realm.DataBinding.dll": {}
-        }
-      },
-      "Remotion.Linq/2.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
-        }
-      },
-      "System.Reflection.TypeExtensions/4.3.0": {
+      "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -104,13 +20,16 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "Xamarin.Essentials/1.0.1": {
         "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1009999": {
@@ -241,7 +160,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "BankingAPI": "1.0.0",
-          "Realm": "3.4.0",
+          "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.4.0.1009999"
         },
         "compile": {
@@ -266,12 +185,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "Fody/3.0.3": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
@@ -281,61 +194,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Realm/3.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3",
-          "Realm.Database": "3.4.0"
-        },
-        "compile": {
-          "lib/netstandard1.4/Realm.Sync.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/Realm.Sync.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Realm.Database/3.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "3.0.3",
-          "NETStandard.Library": "2.0.0",
-          "Realm.DataBinding": "1.2.0",
-          "Remotion.Linq": "2.1.2",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
-        },
-        "compile": {
-          "lib/netstandard1.4/Realm.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/Realm.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Realm.DataBinding/1.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/Xamarin.iOS10/Realm.DataBinding.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS10/Realm.DataBinding.dll": {}
-        }
-      },
-      "Remotion.Linq/2.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
-        }
-      },
-      "System.Reflection.TypeExtensions/4.3.0": {
+      "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -344,13 +203,16 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "Xamarin.Essentials/1.0.1": {
         "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1009999": {
@@ -481,7 +343,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "BankingAPI": "1.0.0",
-          "Realm": "3.4.0",
+          "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.4.0.1009999"
         },
         "compile": {
@@ -506,12 +368,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "Fody/3.0.3": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
@@ -521,61 +377,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Realm/3.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3",
-          "Realm.Database": "3.4.0"
-        },
-        "compile": {
-          "lib/netstandard1.4/Realm.Sync.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/Realm.Sync.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Realm.Database/3.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "3.0.3",
-          "NETStandard.Library": "2.0.0",
-          "Realm.DataBinding": "1.2.0",
-          "Remotion.Linq": "2.1.2",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
-        },
-        "compile": {
-          "lib/netstandard1.4/Realm.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/Realm.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Realm.DataBinding/1.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/Xamarin.iOS10/Realm.DataBinding.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS10/Realm.DataBinding.dll": {}
-        }
-      },
-      "Remotion.Linq/2.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
-        }
-      },
-      "System.Reflection.TypeExtensions/4.3.0": {
+      "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -584,13 +386,16 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "Xamarin.Essentials/1.0.1": {
         "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1009999": {
@@ -721,7 +526,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "BankingAPI": "1.0.0",
-          "Realm": "3.4.0",
+          "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.4.0.1009999"
         },
         "compile": {
@@ -746,12 +551,6 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "Fody/3.0.3": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
@@ -761,61 +560,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Realm/3.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3",
-          "Realm.Database": "3.4.0"
-        },
-        "compile": {
-          "lib/netstandard1.4/Realm.Sync.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/Realm.Sync.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Realm.Database/3.4.0": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "3.0.3",
-          "NETStandard.Library": "2.0.0",
-          "Realm.DataBinding": "1.2.0",
-          "Remotion.Linq": "2.1.2",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
-        },
-        "compile": {
-          "lib/netstandard1.4/Realm.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.4/Realm.dll": {}
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Realm.DataBinding/1.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/Xamarin.iOS10/Realm.DataBinding.dll": {}
-        },
-        "runtime": {
-          "lib/Xamarin.iOS10/Realm.DataBinding.dll": {}
-        }
-      },
-      "Remotion.Linq/2.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
-        }
-      },
-      "System.Reflection.TypeExtensions/4.3.0": {
+      "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -824,13 +569,16 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "Xamarin.Essentials/1.0.1": {
         "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1009999": {
@@ -961,7 +709,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "BankingAPI": "1.0.0",
-          "Realm": "3.4.0",
+          "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.4.0.1009999"
         },
         "compile": {
@@ -987,50 +735,6 @@
     }
   },
   "libraries": {
-    "Fody/3.0.3": {
-      "sha512": "MZ7h/kKoNMdBo7H8+Fy0r41NR9JGq3BvOtJlXXWbSpamXP9WCC25FE1KAYZ6NIDxLJrKYe1LFhZr7dPsnPIugQ==",
-      "type": "package",
-      "path": "fody/3.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Fody.targets",
-        "fody.3.0.3.nupkg.sha512",
-        "fody.nuspec",
-        "netclassictask/Fody.dll",
-        "netclassictask/Fody.pdb",
-        "netclassictask/FodyCommon.dll",
-        "netclassictask/FodyCommon.pdb",
-        "netclassictask/FodyHelpers.dll",
-        "netclassictask/FodyHelpers.pdb",
-        "netclassictask/FodyIsolated.dll",
-        "netclassictask/FodyIsolated.pdb",
-        "netclassictask/Mono.Cecil.Mdb.dll",
-        "netclassictask/Mono.Cecil.Mdb.pdb",
-        "netclassictask/Mono.Cecil.Pdb.dll",
-        "netclassictask/Mono.Cecil.Pdb.pdb",
-        "netclassictask/Mono.Cecil.Rocks.dll",
-        "netclassictask/Mono.Cecil.Rocks.pdb",
-        "netclassictask/Mono.Cecil.dll",
-        "netclassictask/Mono.Cecil.pdb",
-        "netstandardtask/Fody.dll",
-        "netstandardtask/Fody.pdb",
-        "netstandardtask/FodyCommon.dll",
-        "netstandardtask/FodyCommon.pdb",
-        "netstandardtask/FodyHelpers.dll",
-        "netstandardtask/FodyHelpers.pdb",
-        "netstandardtask/FodyIsolated.dll",
-        "netstandardtask/FodyIsolated.pdb",
-        "netstandardtask/Mono.Cecil.Mdb.dll",
-        "netstandardtask/Mono.Cecil.Mdb.pdb",
-        "netstandardtask/Mono.Cecil.Pdb.dll",
-        "netstandardtask/Mono.Cecil.Pdb.pdb",
-        "netstandardtask/Mono.Cecil.Rocks.dll",
-        "netstandardtask/Mono.Cecil.Rocks.pdb",
-        "netstandardtask/Mono.Cecil.dll",
-        "netstandardtask/Mono.Cecil.pdb"
-      ]
-    },
     "Newtonsoft.Json/12.0.1": {
       "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
       "type": "package",
@@ -1070,189 +774,85 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "Realm/3.4.0": {
-      "sha512": "NCFSh0zIMThfQ4Ljjx/9SfFxs8CEtRXXf4ib3xvIg/7fz6pYfRMaGcxFfWIu+PBmGqzi9maDNcvC7VE/cFvhgA==",
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "AK4wVgiJqQQCALZ+2ZFY3UqEyIunVlNSBLAHNyI8bJfLT5c9kHZH3nVF2KUWYd1/2POvaz3xx9K6nSKo6m78Ew==",
       "type": "package",
-      "path": "realm/3.4.0",
+      "path": "system.numerics.vectors/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/Realm.targets",
-        "lib/netstandard1.4/Realm.Sync.deps.json",
-        "lib/netstandard1.4/Realm.Sync.dll",
-        "lib/netstandard1.4/Realm.Sync.pdb",
-        "lib/netstandard1.4/Realm.Sync.xml",
-        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+Xamarin.iOS10+monotouch+Xamarin.Mac/Realm.Sync.dll",
-        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+Xamarin.iOS10+monotouch+Xamarin.Mac/Realm.Sync.xml",
-        "native/android/arm64-v8a/librealm-wrappers.so",
-        "native/android/armeabi-v7a/librealm-wrappers.so",
-        "native/android/x86/librealm-wrappers.so",
-        "native/android/x86_64/librealm-wrappers.so",
-        "native/ios/universal/librealm-wrappers.a",
-        "realm.3.4.0.nupkg.sha512",
-        "realm.nuspec",
-        "runtimes/linux-x64/native/librealm-wrappers.so",
-        "runtimes/osx.10.10-x64/native/librealm-wrappers.dylib",
-        "runtimes/win10-arm/nativeassets/uap10.0/realm-wrappers.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/realm-wrappers.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/realm-wrappers.dll",
-        "runtimes/win81-x64/native/realm-wrappers.dll",
-        "runtimes/win81-x86/native/realm-wrappers.dll"
-      ]
-    },
-    "Realm.Database/3.4.0": {
-      "sha512": "HSRv9H988xLUkQ6SmSMsMRB1YZgZt1x1azGUWd8IGVSa/HGAn2CGPu1jQDcqJIbzOoMK14j2N6OfB2JHTr9Scw==",
-      "type": "package",
-      "path": "realm.database/3.4.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Realm.Database.targets",
-        "content/FodyWeavers.xml.install.xdt",
-        "content/FodyWeavers.xml.uninstall.xdt",
-        "lib/netstandard1.4/Realm.deps.json",
-        "lib/netstandard1.4/Realm.dll",
-        "lib/netstandard1.4/Realm.pdb",
-        "lib/netstandard1.4/Realm.xml",
-        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+Xamarin.iOS10+monotouch+Xamarin.Mac/Realm.dll",
-        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+Xamarin.iOS10+monotouch+Xamarin.Mac/Realm.xml",
-        "native/android/arm64-v8a/librealm-wrappers.so",
-        "native/android/armeabi-v7a/librealm-wrappers.so",
-        "native/android/x86/librealm-wrappers.so",
-        "native/android/x86_64/librealm-wrappers.so",
-        "native/ios/universal/librealm-wrappers.a",
-        "realm.database.3.4.0.nupkg.sha512",
-        "realm.database.nuspec",
-        "runtimes/linux-x64/native/librealm-wrappers.so",
-        "runtimes/osx.10.10-x64/native/librealm-wrappers.dylib",
-        "runtimes/win10-arm/nativeassets/uap10.0/realm-wrappers.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/realm-wrappers.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/realm-wrappers.dll",
-        "runtimes/win81-x64/native/realm-wrappers.dll",
-        "runtimes/win81-x86/native/realm-wrappers.dll",
-        "tools/Mono.Cecil.Mdb.dll",
-        "tools/Mono.Cecil.Pdb.dll",
-        "tools/Mono.Cecil.Rocks.dll",
-        "tools/Mono.Cecil.dll",
-        "tools/Realm.BuildTasks.dll",
-        "tools/RealmWeaver.Fody.dll"
-      ]
-    },
-    "Realm.DataBinding/1.2.0": {
-      "sha512": "cqiYIxBl98H3nBieCG1720NEurJ2A+tmEOCkqr98QOIJGVjFSkwUr6J6OgK02yXPK3w2JKh+ceh75XozglSmiw==",
-      "type": "package",
-      "path": "realm.databinding/1.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid44/Realm.DataBinding.dll",
-        "lib/MonoAndroid44/Realm.DataBinding.pdb",
-        "lib/Xamarin.Mac20/Realm.DataBinding.dll",
-        "lib/Xamarin.iOS10/Realm.DataBinding.dll",
-        "lib/Xamarin.iOS10/Realm.DataBinding.pdb",
-        "lib/netstandard1.0/Realm.DataBinding.dll",
-        "lib/netstandard1.0/Realm.DataBinding.xml",
-        "realm.databinding.1.2.0.nupkg.sha512",
-        "realm.databinding.nuspec"
-      ]
-    },
-    "Remotion.Linq/2.1.2": {
-      "sha512": "Cid+x6ItSesJSB+8zA9evWWBH3Jo5XtIUt6FUSu99BipVzWBA/Zi2bT6LMN/WIjZh/2rgeRlgXpa5WQoatG01A==",
-      "type": "package",
-      "path": "remotion.linq/2.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/Remotion.Linq.XML",
-        "lib/net35/Remotion.Linq.dll",
-        "lib/net40/Remotion.Linq.XML",
-        "lib/net40/Remotion.Linq.dll",
-        "lib/net45/Remotion.Linq.XML",
-        "lib/net45/Remotion.Linq.dll",
-        "lib/netstandard1.0/Remotion.Linq.dll",
-        "lib/netstandard1.0/Remotion.Linq.xml",
-        "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll",
-        "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
-        "remotion.linq.2.1.2.nupkg.sha512",
-        "remotion.linq.nuspec"
-      ]
-    },
-    "System.Reflection.TypeExtensions/4.3.0": {
-      "sha512": "aK6BpjW5ryrun8j8j+faA1bvTaTrMvgaift1YTuWcU6PGh9MEr0NM177sDQIzHp0QxSDfxNWTV+yYsonIFVnfw==",
-      "type": "package",
-      "path": "system.reflection.typeextensions/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net46/System.Reflection.TypeExtensions.dll",
-        "lib/net462/System.Reflection.TypeExtensions.dll",
-        "lib/netcore50/System.Reflection.TypeExtensions.dll",
-        "lib/netstandard1.5/System.Reflection.TypeExtensions.dll",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
-        "ref/net46/System.Reflection.TypeExtensions.dll",
-        "ref/net462/System.Reflection.TypeExtensions.dll",
-        "ref/netstandard1.3/System.Reflection.TypeExtensions.dll",
-        "ref/netstandard1.3/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/de/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/es/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/fr/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/it/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/ja/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/ko/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/ru/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/zh-hans/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.3/zh-hant/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/System.Reflection.TypeExtensions.dll",
-        "ref/netstandard1.5/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/de/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/es/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/fr/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/it/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/ja/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/ko/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/ru/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/zh-hans/System.Reflection.TypeExtensions.xml",
-        "ref/netstandard1.5/zh-hant/System.Reflection.TypeExtensions.xml",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Reflection.TypeExtensions.dll",
-        "system.reflection.typeextensions.4.3.0.nupkg.sha512",
-        "system.reflection.typeextensions.nuspec"
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.4.0": {
-      "sha512": "0D85ti9IcUxWql213d4WE+f2JjNzRzHmEaG34qiA3hD7G8O4i0Mgr+Rutkn4pmrbrW+ABY4vzpECgHmdw+vTjQ==",
+    "Xamarin.Essentials/1.0.1": {
+      "sha512": "TUsMSXqdLEZlx0O3EcWMwOF5e8X3Gh0GX28FlH3q8iyKAQBYd8tV+Ja7tHMplf7D8V4NVCG9ELqx2nk/jPWPew==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.4.0",
+      "path": "xamarin.essentials/1.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "lib/monoandroid71/Xamarin.Essentials.dll",
+        "lib/monoandroid71/Xamarin.Essentials.pdb",
+        "lib/monoandroid71/Xamarin.Essentials.xml",
+        "lib/monoandroid80/Xamarin.Essentials.dll",
+        "lib/monoandroid80/Xamarin.Essentials.pdb",
+        "lib/monoandroid80/Xamarin.Essentials.xml",
+        "lib/monoandroid81/Xamarin.Essentials.dll",
+        "lib/monoandroid81/Xamarin.Essentials.pdb",
+        "lib/monoandroid81/Xamarin.Essentials.xml",
+        "lib/netstandard1.0/Xamarin.Essentials.dll",
+        "lib/netstandard1.0/Xamarin.Essentials.pdb",
+        "lib/netstandard1.0/Xamarin.Essentials.xml",
+        "lib/netstandard2.0/Xamarin.Essentials.dll",
+        "lib/netstandard2.0/Xamarin.Essentials.pdb",
+        "lib/netstandard2.0/Xamarin.Essentials.xml",
+        "lib/uap10.0.16299/Xamarin.Essentials.dll",
+        "lib/uap10.0.16299/Xamarin.Essentials.pdb",
+        "lib/uap10.0.16299/Xamarin.Essentials.pri",
+        "lib/uap10.0.16299/Xamarin.Essentials.xml",
+        "lib/xamarinios10/Xamarin.Essentials.dll",
+        "lib/xamarinios10/Xamarin.Essentials.pdb",
+        "lib/xamarinios10/Xamarin.Essentials.xml",
+        "readme.txt",
+        "xamarin.essentials.1.0.1.nupkg.sha512",
+        "xamarin.essentials.nuspec"
       ]
     },
     "Xamarin.Forms/3.4.0.1009999": {

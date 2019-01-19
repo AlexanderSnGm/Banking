@@ -45,5 +45,17 @@ namespace Banking.Logic
             return result;
             //throw new NotImplementedException();
         }
+
+        public RequestResult RegisterBankAccount(BankingBankAccount bankingBankAccount)
+        {
+            RequestResult result = API.BankAccountWebMethod(BankingWebAPI.Methods.POST, bankingBankAccount);
+            if (result.Status != 0)
+            {
+                result = null;
+            }
+
+            return result;
+            //throw new NotImplementedException();
+        }
     }
 }

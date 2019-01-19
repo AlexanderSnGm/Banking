@@ -4,7 +4,7 @@
              x:Class="Banking.Views.ForgotLoginInfoPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Has Olvidado tu contraseña?, No te preocupes, aca puedes volver a recuperarla!"
+            <Label Text="Has Olvidado tu contraseña?, No te preocupes, acá puedes volver a recuperarla!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

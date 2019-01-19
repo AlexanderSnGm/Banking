@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Banking.Views;
+using Xamarin.Essentials;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Banking
@@ -22,6 +23,8 @@ namespace Banking
         protected override void OnStart()
         {
             // Handle when your app starts
+            //Preferences.Clear();
+            SecureStorage.RemoveAll();
         }
 
         protected override void OnSleep()

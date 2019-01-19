@@ -16,7 +16,7 @@ C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.csproj.CoreCompileInputs.cache
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.AssemblyInfoInputs.cache
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.AssemblyInfo.cs
-C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.csproj.CopyComplete
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\Banking.pdb
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking\obj\Debug\netstandard2.0\XamlC.stamp

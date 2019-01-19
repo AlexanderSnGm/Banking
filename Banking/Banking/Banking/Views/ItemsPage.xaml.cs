@@ -49,5 +49,10 @@ namespace Banking.Views
             if (viewModel.Items.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
         }
+
+        private void MiLogout_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
