@@ -11,7 +11,8 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />-->
             <Label Text="Bienvenido a Banking S.A." FontSize="Medium" Margin="0,20,0,0" />
-            <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
                 <Label Text="Identificacion:" ></Label>
                 <Entry Text="" Placeholder="Identificacion" x:Name="txtID" Keyboard="Default"></Entry>
                 <Label Text="Contraseña:" ></Label>

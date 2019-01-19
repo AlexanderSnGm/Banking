@@ -6,7 +6,17 @@
         <StackLayout>
             <Label Text="Has Olvidado tu contraseña?, No te preocupes, acá puedes volver a recuperarla!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                HorizontalOptions="CenterAndExpand" FontSize="Medium" Margin="0,20,0,0" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                
+                <Label Text="Identificacion:" ></Label>
+                <Entry Text="" Placeholder="Identificacion" x:Name="txtID" Keyboard="Default"></Entry>
+                <StackLayout>
+                    <Button x:Name="btnForgotPass" Clicked="BtnForgotPass_Clicked" Text="Ingresar"></Button>
+                </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>

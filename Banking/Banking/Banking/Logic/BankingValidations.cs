@@ -36,22 +36,8 @@ namespace Banking.Logic
                 error += "El campo de apellido es requerido! \n";
             }
 
-            
-            if (String.IsNullOrEmpty(reg.Email))
-            {
-                if (nonFirstError)
-                    nonFirstError = true;
 
-                error += nonFirstError ? "\n" : "";
-                error += "El campo de email es requerido! \n";
-            }else if (!Regex.IsMatch(reg.Email, emailPattern))
-            {
-                if (nonFirstError)
-                    nonFirstError = true;
-
-                error += nonFirstError ? "\n" : "";
-                error += "El email ingresado no posee un formato valido! \n";
-            }
+            error += ValidateEmail(reg.Email, nonFirstError);
 
             if (String.IsNullOrEmpty(reg.PhoneNumber))
             {
@@ -105,6 +91,27 @@ namespace Banking.Logic
 
 
 
+            return error;
+        }
+
+        public string ValidateEmail(string email, bool nonFirstError = false) {
+            string error = "";
+            if (String.IsNullOrEmpty(email))
+            {
+                if (nonFirstError)
+                    nonFirstError = true;
+
+                error += nonFirstError ? "\n" : "";
+                error += "El campo de email es requerido! \n";
+            }
+            else if (!Regex.IsMatch(email, emailPattern))
+            {
+                if (nonFirstError)
+                    nonFirstError = true;
+
+                error += nonFirstError ? "\n" : "";
+                error += "El email ingresado no posee un formato valido! \n";
+            }
             return error;
         }
 

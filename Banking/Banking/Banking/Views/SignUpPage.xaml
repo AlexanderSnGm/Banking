@@ -9,7 +9,8 @@
                 <Label Text="Registrate y forma parte de nuestra Familia!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" FontSize="Medium" Margin="0,0,0,0" />
-                <StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
                     <Label Text="Nombre:" ></Label>
                     <Entry Text="" Placeholder="Nombre" x:Name="txtFirstName" Keyboard="Default"></Entry>
                     <Label Text="Apellido:" ></Label>
