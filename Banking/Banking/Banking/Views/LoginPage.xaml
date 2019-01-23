@@ -6,11 +6,12 @@
              NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Content>
-        <StackLayout >
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
             <!--<Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />-->
-            <Label Text="Bienvenido a Banking S.A." FontSize="Medium" Margin="0,0,0,0" />
+            
+            <Label Text="Bienvenido a Banking S.A." FontSize="Medium" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
             <StackLayout VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand">
                 <Label Text="Identificacion:" ></Label>

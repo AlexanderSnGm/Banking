@@ -128,6 +128,12 @@ C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\ob
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\res\drawable\backapp.png
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\res\drawable\back_screen.xml
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\res\drawable-hdpi\backapp.png
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\res\drawable-xhdpi\backapp.png
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\res\drawable-xxhdpi\backapp.png
+C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\res\drawable-xxxhdpi\backapp.png
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\bin\Release\Banking.Android.dll
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\linksrc\Banking.Android.dll.mdb
 C:\Users\lgomez.5DOM\Documents\GitHub\Banking\Banking\Banking\Banking.Android\obj\Release\81\linksrc\Xamarin.Essentials.dll.mdb
